@@ -107,10 +107,12 @@
 }
 .chineseCabbage {
   margin: 0;
+  flex: 1;
   font-size: inherit;
   line-height: 120%;
   font-weight: 600;
   font-family: inherit;
+  min-width: 214px;
   max-width: 100%;
 }
 .inStock {
@@ -140,6 +142,7 @@
   background-color: rgba(59, 207, 64, 0.2);
 }
 .productName {
+  align-self: stretch;
   justify-content: flex-start;
   gap: var(--gap-5xs);
   max-width: 100%;
@@ -211,8 +214,10 @@
   color: var(--gray-scale-gray-600);
 }
 .productNameParent {
+  width: 409px;
   flex-direction: column;
   max-width: 100%;
+  flex-shrink: 0;
 }
 .div1 {
   position: relative;
@@ -449,86 +454,6 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: var(--br-151xl);
-  background-color: var(--gray-scale-gray-50);
-  width: 100%;
-  height: 100%;
-}
-.minus1 {
-  margin: 0;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 14px;
-  height: 14px;
-  overflow: hidden;
-  z-index: 1;
-}
-.minus {
-  height: 34px;
-  width: 34px;
-  position: relative;
-}
-.vegTagList {
-  align-self: stretch;
-  position: relative;
-  line-height: 150%;
-}
-.productCategory {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 5px 0 0;
-}
-.container1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: var(--br-151xl);
-  background-color: var(--gray-scale-gray-50);
-  width: 100%;
-  height: 100%;
-}
-.plus1Icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 14px;
-  height: 14px;
-  overflow: hidden;
-  z-index: 1;
-}
-.plus {
-  height: 34px;
-  width: 34px;
-  position: relative;
-}
-.quantity,
-.quantityInput {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.quantity {
-  align-self: stretch;
-  border-radius: var(--br-151xl);
-  background-color: var(--gray-scale-white);
-  border: 1px solid var(--gray-scale-gray-100);
-  flex-direction: row;
-  padding: var(--padding-5xs) 7px;
-}
-.quantityInput {
-  width: 124px;
-  flex-direction: column;
-  padding: 1px 0 0;
-  box-sizing: border-box;
-}
 .addToCart {
   position: relative;
   font-size: var(--body-medium-body-medium-600-size);
@@ -584,15 +509,13 @@
   border-radius: var(--br-24xl);
 }
 .cta {
-  align-self: stretch;
+  width: 432px;
   background-color: var(--gray-scale-white);
   box-shadow: 0-1px 0#e6e6e6, 0 1px 0#e6e6e6;
   border: 1px solid var(--gray-scale-white);
   padding: 18px 0;
   gap: var(--gap-xs);
   max-width: 100%;
-  text-align: center;
-  font-size: var(--body-medium-body-medium-600-size);
 }
 .category1,
 .vegetables {
@@ -714,13 +637,6 @@
   .productDetailsImages {
     min-width: 100%;
   }
-  .productName {
-    flex-wrap: wrap;
-  }
-  .frameGroup {
-    height: auto;
-  }
-  .cta,
   .frameDiv,
   .tags {
     flex-wrap: wrap;
@@ -734,6 +650,9 @@
     font-size: 22px;
     line-height: 26px;
   }
+  .productName {
+    flex-wrap: wrap;
+  }
   .div1 {
     font-size: var(--body-medium-body-medium-600-size);
     line-height: 24px;
@@ -741,5 +660,11 @@
   .div2 {
     font-size: 19px;
     line-height: 29px;
+  }
+  .frameGroup {
+    height: auto;
+  }
+  .cta {
+    flex-wrap: wrap;
   }
 }
