@@ -180,26 +180,6 @@ const ProductDetails: FunctionComponent = () => {
           >{`Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat pulvinar. `}</div>
         </div>
         <div className={styles.cta}>
-          <div className={styles.quantityInput}>
-            <div className={styles.quantity}>
-              <div className={styles.minus}>
-                <div className={styles.container} />
-                <input className={styles.minus1} type="checkbox" />
-              </div>
-              <div className={styles.productCategory}>
-                <div className={styles.vegTagList}>5</div>
-              </div>
-              <div className={styles.plus}>
-                <div className={styles.container1} />
-                <img
-                  className={styles.plus1Icon}
-                  loading="lazy"
-                  alt=""
-                  src="/plus-1.svg"
-                />
-              </div>
-            </div>
-          </div>
           <button className={styles.button}>
             <div className={styles.addToCart}>Add to Cart</div>
             <input className={styles.frameInput} type="checkbox" />
